@@ -26,7 +26,7 @@
     <link rel="icon" href="assets/images/favicon/android-icon-192x192.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="assets/images/favicon/apple-icon-180x180.png" />
     <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-310x310.png" />
-    
+
     <!-- bootstrap.min css -->
     <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.min.css">
     <!-- Iconfont Css -->
@@ -41,6 +41,11 @@
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('62ztcJTzGhuR-xpHa')
+    </script>
 
 </head>
 
@@ -107,7 +112,8 @@
                                 </div>
                                 <div class="text-box">
                                     <span>Email Us</span>
-                                    <h5><a href="malito:support@Maxicleaners.com.uk">support@Maxicleaners.com.uk</a></h5>
+                                    <h5><a href="malito:support@Maxicleaners.com.uk">support@Maxicleaners.com.uk</a>
+                                    </h5>
                                 </div>
                             </div>
                         </div>
@@ -346,7 +352,8 @@
                         <div class="about-header">
                             <h3>Residential <span>Cleaning</span></h3>
                             <h6>One Time / Recurring</h6>
-                            <p>When you work with Maxicleaners Cleaning you can cross a major choir off your list, cleaning
+                            <p>When you work with Maxicleaners Cleaning you can cross a major choir off your list,
+                                cleaning
                                 your home.</p>
                         </div>
 
@@ -671,8 +678,8 @@
             </div>
         </div>
     </div> -->
-    
-<!-- 
+
+    <!-- 
     <section class="blog section-padding">
         <div class="container">
             <div class="row">
@@ -742,7 +749,7 @@
 
 
 
-<!--                 
+    <!--                 
                 <div class="col-lg-6 col-md-12">
                     <div class="section-heading">
                         <h2><span>Maybe</span> help you?</h2>
@@ -841,7 +848,7 @@
         </div>
     </section> -->
 
-    
+
     <!-- Faq section END -->
     <section class="quote-section section-padding pb-0">
         <div class="container">
@@ -855,47 +862,58 @@
 
             <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    <form class="quote-form" action="">
+                    <form class="quote-form" action="" id="form">
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="form-group">
-                                    <select class="form-select form-control" aria-label="Default select example">
+                                    <select class="form-select form-control" aria-label="Default select example"
+                                        name="services" id="services">
                                         <option selected>Residential Cleaning</option>
-                                        <option value="1">Floor Cleaning</option>
-                                        <option value="2">Room Cleaning</option>
-                                        <option value="3">Cleaning</option>
+                                        <option value="Floor Cleaning">Floor Cleaning</option>
+                                        <option value="Room Cleaning">Room Cleaning</option>
+                                        <option value="Cleaning">Cleaning</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
-                                    <input type="text" id="fname" class="form-control" placeholder="Full Name">
+                                    <input type="text" id="from_name" name="from_name" class="form-control" placeholder="Full Name">
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
-                                    <input type="text" id="phone" class="form-control" placeholder="Your Phone Number*"
+                                    <input type="text" id="phone" name="phone" class="form-control" placeholder="Your Phone Number*"
                                         required>
                                 </div>
                             </div>
-
                             <div class="col-lg-12">
-                                <div class="form-group">
-                                    <textarea id="message" name="message" cols="30" rows="6" class="form-control"
-                                        placeholder="Here goes your message"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12">
-                                <div class="mt-5 text-center">
-                                    <input id="submit" name="submit" type="submit" class="btn btn-main"
-                                        value="Send Message">
-                                </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" class="form-control"
+                                    placeholder="Email">
                             </div>
                         </div>
-                    </form>
+                        <div class="col-lg-12">
+                        <div class="form-group">
+                            <input type="text" name="address" id="address" class="form-control"
+                                placeholder="Address">
+                        </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <textarea id="message" name="message" cols="30" rows="6" class="form-control"
+                            placeholder="Here goes your message"></textarea>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="mt-5 text-center">
+                        <input id="button" name="submit" type="submit" class="btn btn-main" value="Send Message">
+                    </div>
                 </div>
             </div>
+            </form>
+        </div>
+        </div>
         </div>
     </section>
 
@@ -970,7 +988,8 @@
                 <div class="row justify-content-center ">
                     <div class="col-lg-6 col-md-6">
                         <div class="copyright text-center text-md-left text-lg-left">
-                             &copy; 2021 <strong> Pytronic, C.A. </strong> Mede with ❤️ by <a href="https://pytronicca.com/" target="_blank"><strong>Pytronic</strong></a>
+                            &copy; 2021 <strong> Pytronic, C.A. </strong> Mede with ❤️ by <a
+                                href="https://pytronicca.com/" target="_blank"><strong>Pytronic</strong></a>
                         </div>
 
                     </div>
