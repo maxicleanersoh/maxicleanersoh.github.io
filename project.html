@@ -247,7 +247,12 @@
                             </li> -->
 
                             <li class="nav-item ">
-                                <a href="#" class="nav-link  ">
+                                <a href="/project.html" class="nav-link  ">
+                                    Projects
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="about.html" class="nav-link  ">
                                     About
                                 </a>
                             </li>
@@ -414,9 +419,9 @@
                                 <img src="assets/images/clients/test-1.jpg" alt="" class="img-fluid">
                             </div>
                             <div class="info-desc">
-                                “It’s been an absolute pleasure to work with Clenora,their response to our brief
-                                exceeded expectations and theexecution was efficient, professional and very
-                                reassuring.I’d fully recommend theme.”
+                                “It’s been an absolute pleasure to work with Clenora,their response to our brief
+                                exceeded expectations and the execution was efficient, professional and very
+                                reassuring. I’d fully recommend theme.”
                             </div>
 
                             <div class="client-info">
@@ -430,9 +435,9 @@
                                 <img src="assets/images/clients/test-2.jpg" alt="" class="img-fluid">
                             </div>
                             <div class="info-desc">
-                                “It’s been an absolute pleasure to work with Clenora,their response to our brief
-                                exceeded expectations and theexecution was efficient, professional and very
-                                reassuring.I’d fully recommend theme.”
+                                “It’s been an absolute pleasure to work with Clenora, their response to our brief
+                                exceeded expectations and the execution was efficient, professional and very
+                                reassuring. I’d fully recommend theme.”
                             </div>
 
                             <div class="client-info">
@@ -476,11 +481,12 @@
             </div>
         </div>
     </section>
+
     <section class="quote-section section-padding pb-0">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="section-heading">
+                    <div class="section-heading" id="form_id">
                         <h2><span>Get a free</span>quote estimate</h2>
                     </div>
                 </div>
@@ -488,40 +494,60 @@
 
             <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    <form class="quote-form" action="">
+                    <form class="quote-form" action="" id="form">
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="form-group">
-                                    <select class="form-select form-control" aria-label="Default select example">
-                                        <option selected>Residential Cleaning</option>
-                                        <option value="1">Floor Cleaning</option>
-                                        <option value="2">Room Cleaning</option>
-                                        <option value="3">Cleaning</option>
+                                    <select class="form-select form-control" aria-label="Default select example"
+                                        name="services" id="services">
+                                        <!-- <option selected>Residential Cleaning</option>
+                                        <option value="Floor Cleaning">Floor Cleaning</option>
+                                        <option value="Room Cleaning">Room Cleaning</option> -->
+                                        <option value="Recurring cleaning">Recurring cleaning </option>
+                                        <option value="One time cleaning">One time cleaning</option>
+                                        <option value="Ocassional cleaning">Ocassional cleaning</option>
+                                        <option value="Apartment and condo cleaning">Apartment and condo cleaning
+                                        </option>
+                                        <option value="Move-in cleaning">Move-in cleaning</option>
+                                        <option value="Move out cleaning">Move out cleaning</option>
+                                        <option value="Special event cleaning">Special event cleaning</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
-                                    <input type="text" id="fname" class="form-control" placeholder="Full Name">
+                                    <input type="text" id="from_name" name="from_name" class="form-control"
+                                        placeholder="Full Name*" required>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
-                                    <input type="text" id="phone" class="form-control" placeholder="Your Phone Number*"
-                                        required>
+                                    <input type="text" id="phone" name="phone" class="form-control"
+                                        placeholder="Your Phone Number*" required>
                                 </div>
                             </div>
-
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" class="form-control"
+                                        placeholder="Email*" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <input type="text" name="address" id="address" class="form-control"
+                                        placeholder="Address*" required>
+                                </div>
+                            </div>
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <textarea id="message" name="message" cols="30" rows="6" class="form-control"
-                                        placeholder="Here goes your message"></textarea>
+                                        placeholder="Here goes your message*" required></textarea>
                                 </div>
                             </div>
 
                             <div class="col-lg-12">
                                 <div class="mt-5 text-center">
-                                    <input id="submit" name="submit" type="submit" class="btn btn-main"
+                                    <input id="button" name="submit" type="submit" class="btn btn-main"
                                         value="Send Message">
                                 </div>
                             </div>
