@@ -247,3 +247,22 @@ document.getElementById('form')
         alert(JSON.stringify(err));
       });
   });
+
+
+  // Toggle FAQ answers
+document.querySelectorAll('.faq-question').forEach(item => {
+  item.addEventListener('click', event => {
+    const question = event.target;
+    const answer = question.nextElementSibling;
+
+    // Toggle active class for question
+    question.classList.toggle('active');
+
+    // Toggle the answer display
+    if (answer.style.display === 'block') {
+      answer.style.display = 'none';
+    } else {
+      answer.style.display = 'block';
+    }
+  });
+});

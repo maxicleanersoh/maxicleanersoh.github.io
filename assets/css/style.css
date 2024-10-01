@@ -1976,3 +1976,43 @@ Footer Section
 .filter-green {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(0%);
 }
+
+
+.faq-section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.faq-question {
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+  color: #259392;
+}
+
+.faq-answer {
+  display: none;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.faq-question.active + .faq-answer {
+  display: block;
+}
+
+/* Viñeta */
+ul {
+  list-style-type: disc; /* Cambia el tipo de viñeta, puede ser 'circle', 'square', etc. */
+  padding-left: 20px; /* Añade espacio a la izquierda para alinear la lista */
+}
