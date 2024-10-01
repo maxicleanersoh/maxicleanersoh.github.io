@@ -203,23 +203,47 @@
 })(jQuery);
 
 
+// const btn = document.getElementById('button');
+
+// document.getElementById('form')
+//  .addEventListener('submit', function(event) {
+//    event.preventDefault();
+
+//    btn.value = 'Sending...';
+
+//    const serviceID = 'default_service';
+//    const templateID = 'template_gg0apbw';
+
+//    emailjs.sendForm(serviceID, templateID, this)
+//     .then(() => {
+//       btn.value = 'Send Email';
+//       alert('Message sent. We will contact you shortly.');
+//     }, (err) => {
+//       btn.value = 'Send Email';
+//       alert(JSON.stringify(err));
+//     });
+// });
+
 const btn = document.getElementById('button');
 
 document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+  .addEventListener('submit', function(event) {
+    event.preventDefault();
 
-   btn.value = 'Sending...';
+    btn.value = 'Sending...';
 
-   const serviceID = 'default_service';
-   const templateID = 'template_gg0apbw';
+    const serviceID = 'default_service';
+    const templateID = 'template_gg0apbw';
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Email';
-      alert('Message sent. We will contact you shortly.');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        btn.value = 'Send Email';
+        alert('Message sent. We will contact you shortly.');
+        
+        // Limpiar el formulario después de enviar el mensaje
+        this.reset();
+      }, (err) => {
+        btn.value = 'Send Email';
+        alert(JSON.stringify(err));
+      });
+  });
