@@ -266,3 +266,10 @@ document.querySelectorAll('.faq-question').forEach(item => {
     }
   });
 });
+
+// Load
+
+// Espera a que toda la página esté cargada antes de quitar el loader
+window.addEventListener('load', function() {
+  document.body.classList.add('loaded');
+});

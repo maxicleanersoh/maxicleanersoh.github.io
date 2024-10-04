@@ -2016,3 +2016,37 @@ ul {
   list-style-type: disc; /* Cambia el tipo de viñeta, puede ser 'circle', 'square', etc. */
   padding-left: 20px; /* Añade espacio a la izquierda para alinear la lista */
 }
+
+
+/* Loader Styles */
+#loader {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Fondo blanco mientras carga */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-logo {
+  width: 150px; /* Ajusta el tamaño del logo */
+  animation: spin 2s linear infinite; /* Agrega una animación de rotación */
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+/* Ocultar el loader cuando la página esté completamente cargada */
+body.loaded #loader {
+  display: none;
+}
