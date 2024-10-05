@@ -38,14 +38,16 @@ body {
   line-height: 30px;
   margin: 0;
   text-align: left;
-  background-color: #fff;
+  background-color: #259392;
+  /* background-color: #fff; */
   font-weight: 400;
-  color: #666666;
+  /* color: #666666; */
+  color: #000000;
   overflow-x: hidden;
 }
 
 p {
-  color: #666666;
+  color: #000000;
   font-family: "Sarabun", sans-serif;
   line-height: 28px;
   font-size: 16px;
@@ -116,7 +118,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #333;
+  color: #000000;
 }
 
 .h1 a:hover,
@@ -279,7 +281,8 @@ Banner Area
   font-size: 60px;
   line-height: 60px;
   font-weight: 400;
-  color: #999999;
+  /* color: #999999; */
+  color: #000000;
   margin-bottom: 40px;
 }
 
@@ -315,6 +318,7 @@ Header TopBar
 .header-top {
   border-bottom: 1px solid #ececec;
   padding: 10px 0px;
+  background-color: #ffffff;
 }
 
 .header-top-info strong {
@@ -323,7 +327,8 @@ Header TopBar
 }
 
 .header-top-socials a {
-  color: #666666;
+  /* color: #666666; */
+  color: #000000;
   margin-left: 15px;
 }
 
@@ -332,6 +337,7 @@ Header MIddle
 ================*/
 .header-middle {
   padding: 15px 0px 20px;
+  background-color: #259392;
 }
 
 .header-info-single {
@@ -346,7 +352,7 @@ Header MIddle
 
 .header-info-single .icon-box i {
   font-size: 22px;
-  color: #259392;
+  color: #000000;
 }
 
 .header-info-single .text-box {
@@ -355,7 +361,8 @@ Header MIddle
 
 .header-info-single .text-box span {
   text-transform: uppercase;
-  color: #666666;
+  color: #000000;
+  /* color: #666666; */
   font-size: 12px;
   font-weight: 600;
   letter-spacing: .5px;
@@ -469,7 +476,8 @@ Header MIddle
 }
 
 .banner .banner-content h1 span {
-  color: #259392;
+  /* color: #259392; */
+  color: #000000;
 }
 
 .banner .banner-content p {
@@ -1224,13 +1232,13 @@ Footer Section
 
 .footer .footer-about h6 {
   text-transform: uppercase;
-  color: #999;
+  color: #000000;
   font-size: 14px;
   margin-bottom: 20px;
 }
 
 .footer .footer-about p {
-  color: #999;
+  color: #000000;
 }
 
 .footer .footer-widget .widget-title {
@@ -1267,7 +1275,7 @@ Footer Section
 }
 
 .footer .footer-links a {
-  color: #7a7a7a;
+  color: #000000;
   font-size: 15px;
 }
 
@@ -1282,7 +1290,7 @@ Footer Section
 .footer .footer-socials a {
   margin-left: 10px;
   font-size: 15px;
-  color: #7a7a7a;
+  color: #000000;
 }
 
 .footer .footer-socials a:hover {
@@ -1623,7 +1631,7 @@ Recent post widget
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 10px;
-  color: #666666;
+  color: #000000;
 }
 
 .widget_tweets h6 span {
@@ -1731,7 +1739,7 @@ Single Blog Page
 }
 
 .post-share a {
-  color: #666666;
+  color: #000000;
   display: inline-block;
   margin: 0px 5px;
 }
@@ -1912,7 +1920,7 @@ Footer Section
 }
 
 .footer .footer-links a {
-  color: #7a7a7a;
+  color: #000000;
   font-size: 15px;
 }
 
@@ -1927,7 +1935,7 @@ Footer Section
 .footer .footer-socials a {
   margin-left: 10px;
   font-size: 15px;
-  color: #7a7a7a;
+  color: #000000;
 }
 
 .footer .footer-socials a:hover {
@@ -2068,3 +2076,23 @@ body.loaded #loader {
   pointer-events: none; /* Evita la interacción cuando se desvanezca */
 }
 
+
+
+.background-blue {
+  background: #38b6b5;
+
+}
+.background-white {
+  background: #ffffff;
+
+}
+
+.letter-black {
+  color: #000000;
+
+}
+
+.letter-white {
+  color: #ffffff;
+
+}

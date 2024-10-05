@@ -272,5 +272,5 @@ document.querySelectorAll('.faq-question').forEach(item => {
 window.addEventListener('load', function() {
   setTimeout(function() {
       document.body.classList.add('loaded');
-  }, 2000); // Puedes ajustar el tiempo aquí según tus preferencias
+  }, 1000); // Puedes ajustar el tiempo aquí según tus preferencias
 });
