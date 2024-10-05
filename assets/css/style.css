@@ -2018,7 +2018,7 @@ ul {
 }
 
 
-/* Loader Styles (Responsive adjustments) */
+/* Loader Styles */
 #loader {
   position: fixed;
   z-index: 9999;
@@ -2030,30 +2030,41 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 20px; /* Añadir un poco de espacio interno para pantallas más pequeñas */
 }
 
-/* Ajuste del tamaño del logo en dispositivos móviles */
 .loader-logo {
-  width: 150px;
-  max-width: 80%; /* Esto asegura que el logo no sea más grande que el ancho de la pantalla en móviles */
-  height: auto; /* Mantiene la relación de aspecto del logo */
+  width: 200px; /* Aumenta o reduce este valor para cambiar el tamaño del logo */
+  max-width: 80%;
+  height: auto;
   animation: spin 2s linear infinite;
 }
 
 @media (max-width: 768px) {
   .loader-logo {
-      width: 120px; /* Reduzco un poco el tamaño del logo en dispositivos móviles */
+      width: 150px; /* Más pequeño en tablets y móviles */
   }
 }
 
 @media (max-width: 576px) {
   .loader-logo {
-      width: 100px; /* Aún más pequeño para pantallas muy pequeñas */
+      width: 120px; /* Aún más pequeño en pantallas pequeñas */
+  }
+}
+
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
   }
 }
 
 /* Ocultar el loader cuando la página esté completamente cargada */
 body.loaded #loader {
-  display: none;
+  opacity: 0; /* Transición suave de desvanecimiento */
+  transition: opacity 0.5s ease;
+  pointer-events: none; /* Evita la interacción cuando se desvanezca */
 }
+

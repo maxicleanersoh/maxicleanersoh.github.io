@@ -269,10 +269,8 @@ document.querySelectorAll('.faq-question').forEach(item => {
 
 // Load
 
-// Espera a que toda la página esté cargada antes de quitar el loader
 window.addEventListener('load', function() {
-  // Establece un retraso de 2 segundos (2000 ms) antes de ocultar el loader
   setTimeout(function() {
       document.body.classList.add('loaded');
-  }, 2000); // Cambia 2000 a cualquier cantidad de milisegundos que desees
+  }, 2000); // Puedes ajustar el tiempo aquí según tus preferencias
 });
